@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima&display=swap');
+
+*{
+    font-family: "Agdasima", sans-serif;
+    text-decoration:none; 
+    color: #000000;
+}
+
+
+
+html, body, #root {
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+section {  
+    border-top-color:solid rgb(37, 94, 218);
+    border-top: 4px;
+    padding: 10px 10px 10px 10px;
+    background-color: #ffffff;
+    width: 100%;
+  
+}
+A:link {text-decoration: none } 
+@media (max-width: 768px) {
+    section {
+        width: 100%;
+        /* Ancho completo en pantallas más pequ eñas */
+        margin-left: 0;
+        /* Sin espacio para el aside */
+    }
+}
+
+img {
+    width: 100%;
+    height: 300px;
+    margin: 5px 5px 5px 5px;
+    border-radius: 6px;
+
+}
+
+h2{
+    padding-top: 20px;
+    text-align: center;
+}
+
+
+
+@media (max-width: 768px) {
+    .aside-container {
+        display: none;
+        /* Oculta el aside en pantallas más pequeñas */
+    }
+}
+
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-wrapper {
+    flex: 0 0 300px;
+    text-align: center;
+    margin: 45px;
+}
+
+.image-wrapper img {
+    width: 50%;
+    height: auto;
+}
+
+.image-wrapper p, p, h3 {
+    margin-top: 10px;
+    text-align: center;
+   
+
+}
+
+h3,h2,h1{
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  
+
+/* Estilos adicionales para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .image-wrapper {
+        flex-basis: 50%;
+        /* Dos imágenes por fila en pantallas más pequeñas */
+    }
+}
+
+#clientes {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border: 2px solid #ffffff;
+}
+
+.promotions-section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .promotion {
+    flex: 1 0 300px;
+    margin: 10px;
+  }
+  
+  .promotion-image {
+    width: 100%;
+    height: 300px;
+  }
+  
+  .promotion-details {
+    padding: 10px;
+  }
+  
+  .promotion-price {
+    font-weight: bold;
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    .promotion {
+      flex-basis: 100%;
+    }
+  }
+
+  .footer {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid rgb(228, 228, 228);
+    margin-top: auto;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .github-icon {
+    font-size: 24px;
+    color: #333;
+    margin-left: 10px;
+    margin-bottom: 22px;
+    margin-right: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+    }
+  
+    .footer-right {
+      margin-top: 10px;
+      justify-content: center;
+    }
+  }
+
+  .blog-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .blog-item {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .large {
+    width: 100%;
+  }
+  
+  .medium {
+    width: 50%;
+  }
+  
+  .small {
+    width: 25%;
+  }
+  
+  .blog-description {
+    text-align: center;
+  }
+  
+  
+  
+  @media (max-width: 768px) {
+    .blog-item {
+      width: 100%;
+    }
+    
+    .medium {
+      width: 100%;
+    }
+    
+    .small {
+      width: 50%;
+    }
+  }
+  .blog-item img {
+    transition: transform 0.3s ease;
+  }
+  
+  .blog-item img:hover {
+    transform: scale(1.1);
+  }
+  
+  
+  .reservation-form {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input,
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 480px) {
+    .reservation-form {
+      max-width: 80%;
+    }
+  }
+
+  .news-container {
+    margin-top: 20px;
+  }
+  
+  .news-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .news-list li {
+    margin-bottom: 10px;
+  }
+  
+  .news-list li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .news-list li a:hover {
+    text-decoration: underline;
+  }
+  
+  
+
+  .horarios-container {
+
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .horarios-title {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+
+  
+  .spa-image {
+    width: 100%;
+
+  }
+  
+  .horarios-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .horarios-list-container {
+    flex-basis: 60%;
+  }
+  
+  .horarios-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .horario-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .horario-dia {
+    font-weight: bold;
+  }
+  
+  .redes-sociales {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .redes-sociales a {
+    color: #333;
+    font-size: 20px;
+  }
+  
+  .map-container {
+    flex-basis: 35%;
+    max-width: 400px;
+    margin-top: 20px;
+  }
+  
+  /* Estilos responsive */
+  @media screen and (max-width: 768px) {
+    .horarios-list-container {
+      flex-basis: 100%;
+    }
+  
+    .map-container {
+      flex-basis: 100%;
+      max-width: none;
+    }
+  }
+  
+  .servicios-spa {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .servicios-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .servicios-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .servicio-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .servicio-imagen {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+  
+  .servicio-nombre {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .servicio-descripcion {
+    margin-bottom: 10px;
+  }
+  
+  .servicio-precio {
+    font-size: 18px;
+  }
+  
